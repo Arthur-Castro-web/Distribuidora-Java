@@ -1,0 +1,259 @@
+body {
+    background-image: url("../imagens/fundo.png");
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+h1 {
+    color: rgb(255, 180, 0);
+    font-size: 35px;
+    font-family: "Nunito", sans-serif;
+}
+
+h3 {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+hr {
+    width: 80%;
+}
+/* ORGANIZAÇÃO DOS PRODUTOS */
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* CARTÃO */
+
+.card {
+    background-color: rgb(25, 25, 25);
+    width: 210px;    
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #d6a500;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+    .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px rgba(255, 190, 0, 0.3);
+}
+
+/* IMAGENS */
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* TÍTULOS */
+
+.card h2 {
+    color: #ffc400;
+    font-size: 20px;
+}
+
+/* DESCRIÇÕES */
+
+.card p {
+    color: white;
+    font-size: 20px;
+}
+
+.botao {
+    display: inline-block;
+    color: #ffc400;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    color: rgb(20, 199, 13);
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: rgba(25, 25, 25, 0.637);
+
+    color: rgb(187, 186, 186);
+
+    text-align: center;
+
+    padding: 34px;
+}
+
+footer h2 {
+    color: rgb(194, 194, 194);
+}
+
+/* AVISO DE MAIORIDADE (MODAL) */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal-conteudo {
+    background-color: rgb(25, 25, 25);
+    border: 1px solid #d6a500;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-conteudo h2 {
+    color: #ffc400;
+}
+
+.modal-conteudo button {
+    margin: 10px 5px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-sim {
+    background-color: #ffc400;
+    color: black;
+}
+
+#btn-nao {
+    background-color: #444;
+    color: white;
+}
+
+/* BOTÃO "PEDIR" DENTRO DO CARD */
+
+.card .botao {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ffc400;
+}
+
+.card .botao:hover {
+    border-color: rgb(20, 199, 13);
+}
+
+/* AVISO +18 NOS CARDS */
+
+.aviso-idade {
+    color: #ff5555;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* SEÇÕES LADO A LADO */
+
+.secoes-lado {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.diferencial,
+.pedido {
+    flex: 1;
+    min-width: 280px;
+    max-width: 460px;
+    padding: 20px;
+    
+}
+
+.contato-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+.modal-pedido {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .modal-pedido-caixa {
+    background: #1c1c1c;
+    border: 1px solid #f5b800;
+    border-radius: 10px;
+    padding: 24px;
+    max-width: 320px;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .modal-pedido-caixa h3 {
+    color: #f5b800;
+    margin-bottom: 10px;
+  }
+  
+  .modal-pedido-botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 18px;
+  }
+  
+  .modal-pedido-botoes button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #f5b800;
+    background: transparent;
+    color: #f5b800;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #pedido-sim {
+    background: #f5b800;
+    color: #000;
+  }
